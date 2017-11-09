@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9470A50B1FB4640800A20AE3 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9470A50A1FB4640800A20AE3 /* QuestionViewController.swift */; };
 		9470A50D1FB4641D00A20AE3 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9470A50C1FB4641D00A20AE3 /* ResultsViewController.swift */; };
+		9470A50F1FB4961200A20AE3 /* QuestionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9470A50E1FB4961200A20AE3 /* QuestionData.swift */; };
 		94D739171FAC644B00F9EB9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D739161FAC644B00F9EB9B /* AppDelegate.swift */; };
 		94D739191FAC644C00F9EB9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D739181FAC644C00F9EB9B /* ViewController.swift */; };
 		94D7391C1FAC644C00F9EB9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94D7391A1FAC644C00F9EB9B /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		9470A50A1FB4640800A20AE3 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		9470A50C1FB4641D00A20AE3 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		9470A50E1FB4961200A20AE3 /* QuestionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionData.swift; sourceTree = "<group>"; };
 		94D739131FAC644B00F9EB9B /* PersonalityQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalityQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		94D739161FAC644B00F9EB9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		94D739181FAC644C00F9EB9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				94D739161FAC644B00F9EB9B /* AppDelegate.swift */,
 				94D739181FAC644C00F9EB9B /* ViewController.swift */,
 				94D7391A1FAC644C00F9EB9B /* Main.storyboard */,
+				9470A50E1FB4961200A20AE3 /* QuestionData.swift */,
 				9470A50A1FB4640800A20AE3 /* QuestionViewController.swift */,
 				9470A50C1FB4641D00A20AE3 /* ResultsViewController.swift */,
 				94D7391D1FAC644C00F9EB9B /* Assets.xcassets */,
@@ -144,6 +147,7 @@
 			files = (
 				94D739191FAC644C00F9EB9B /* ViewController.swift in Sources */,
 				94D739171FAC644B00F9EB9B /* AppDelegate.swift in Sources */,
+				9470A50F1FB4961200A20AE3 /* QuestionData.swift in Sources */,
 				9470A50B1FB4640800A20AE3 /* QuestionViewController.swift in Sources */,
 				9470A50D1FB4641D00A20AE3 /* ResultsViewController.swift in Sources */,
 			);
