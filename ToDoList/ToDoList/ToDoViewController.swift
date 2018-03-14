@@ -10,6 +10,8 @@ import UIKit
 
 class ToDoViewController: UITableViewController {
     
+    var todo: ToDo?
+    
     var isEndDatePickerHidden = true
     
     override func viewDidLoad() {
@@ -44,6 +46,21 @@ class ToDoViewController: UITableViewController {
             saveButton.isEnabled = false
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        super.prepare(for: segue, sender: sender)
+        
+        guard segue.identifier == "saveUnwind" else {return}
+        
+        let title = titleTextField.text!
+        let isComplete = isCompleteButton.isSelected
+        let dueDate = dueDatePickerView.date
+        let notes = notesTextView.text
+        
+        todo = ToDo(title: title, isComplete: isComplete, dueDate: dueDate, notes: notes)
+    }
+    
+    
     func updateDueDateLabel(date: Date) {
         dueDateLabel.text = ToDo.dueDateFormatter.string(from: date)
     }
