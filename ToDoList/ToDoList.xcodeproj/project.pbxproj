@@ -12,6 +12,7 @@
 		944E8B871FE29CA10078E13D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 944E8B861FE29CA10078E13D /* Assets.xcassets */; };
 		944E8B921FE2B2C90078E13D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944E8B911FE2B2C90078E13D /* ToDo.swift */; };
 		949F0D4B1FFB8304008DA0AD /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949F0D4A1FFB8304008DA0AD /* ToDoTableViewController.swift */; };
+		94D25D47206BB44F00A2A83D /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94D25D46206BB44F00A2A83D /* ToDoCell.swift */; };
 		94E014FC20207C7300875272 /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94E014FB20207C7300875272 /* ToDoViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		944E8B8B1FE29CA10078E13D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		944E8B911FE2B2C90078E13D /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		949F0D4A1FFB8304008DA0AD /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
+		94D25D46206BB44F00A2A83D /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
 		94E014FB20207C7300875272 /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,6 +60,7 @@
 			children = (
 				944E8B7F1FE29CA10078E13D /* AppDelegate.swift */,
 				944E8B831FE29CA10078E13D /* Main.storyboard */,
+				94D25D46206BB44F00A2A83D /* ToDoCell.swift */,
 				944E8B861FE29CA10078E13D /* Assets.xcassets */,
 				944E8B8B1FE29CA10078E13D /* Info.plist */,
 				944E8B911FE2B2C90078E13D /* ToDo.swift */,
@@ -142,6 +145,7 @@
 				944E8B801FE29CA10078E13D /* AppDelegate.swift in Sources */,
 				949F0D4B1FFB8304008DA0AD /* ToDoTableViewController.swift in Sources */,
 				944E8B921FE2B2C90078E13D /* ToDo.swift in Sources */,
+				94D25D47206BB44F00A2A83D /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

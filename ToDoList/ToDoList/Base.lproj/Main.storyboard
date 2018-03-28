@@ -19,14 +19,42 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ToDoCellIdentifier" id="Zg8-sZ-vva">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ToDoCellIdentifier" id="Zg8-sZ-vva" customClass="ToDoCell" customModule="ToDoList" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zg8-sZ-vva" id="9FE-75-zEH">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeC-iD-h2R">
+                                            <rect key="frame" x="8" y="-1" width="50" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="50" id="SPa-qy-Wkf"/>
+                                            </constraints>
+                                            <state key="normal" image="UnChecked"/>
+                                            <state key="selected" image="Checked"/>
+                                            <connections>
+                                                <action selector="completeButtonTapped:" destination="Zg8-sZ-vva" eventType="touchUpInside" id="xv2-pd-Ad0"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9b-YS-WKC">
+                                            <rect key="frame" x="74" y="11" width="293" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="KeC-iD-h2R" firstAttribute="leading" secondItem="9FE-75-zEH" secondAttribute="leading" constant="8" id="2yS-rS-iyc"/>
+                                        <constraint firstItem="KeC-iD-h2R" firstAttribute="centerY" secondItem="9FE-75-zEH" secondAttribute="centerY" id="HLt-N6-SxZ"/>
+                                        <constraint firstItem="X9b-YS-WKC" firstAttribute="leading" secondItem="KeC-iD-h2R" secondAttribute="trailing" constant="8" id="Mvk-CO-kYf"/>
+                                        <constraint firstItem="X9b-YS-WKC" firstAttribute="trailing" secondItem="9FE-75-zEH" secondAttribute="trailingMargin" constant="8" id="RXg-Kt-Kjf"/>
+                                        <constraint firstItem="X9b-YS-WKC" firstAttribute="centerY" secondItem="9FE-75-zEH" secondAttribute="centerY" id="Uf8-zl-ijP"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="isCompleteButton" destination="KeC-iD-h2R" id="j1N-Tv-9LG"/>
+                                    <outlet property="titleLabel" destination="X9b-YS-WKC" id="T4G-Nm-dJG"/>
                                     <segue destination="lg6-B4-JsZ" kind="show" identifier="showDetails" id="wV5-LP-Kx7"/>
                                 </connections>
                             </tableViewCell>
@@ -46,7 +74,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Upk-T6-Vos" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-95" y="-61"/>
+            <point key="canvasLocation" x="-95.200000000000003" y="-61.619190404797607"/>
         </scene>
         <!--New ToDo-->
         <scene sceneID="jGW-RT-BlW">
