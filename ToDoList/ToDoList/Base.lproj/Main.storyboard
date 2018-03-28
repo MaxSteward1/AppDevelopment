@@ -26,6 +26,9 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="lg6-B4-JsZ" kind="show" identifier="showDetails" id="wV5-LP-Kx7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -211,7 +214,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RX2-V4-WZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="641" y="-62"/>
+            <point key="canvasLocation" x="634" y="327"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="okT-GY-fpI">
@@ -234,4 +237,7 @@
         <image name="Checked" width="44" height="44"/>
         <image name="UnChecked" width="44" height="44"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="wV5-LP-Kx7"/>
+    </inferredMetricsTieBreakers>
 </document>
